@@ -7,6 +7,8 @@ author:
   - affiliation:
     - id: "1"
       institution: "Natural History Museum, University of Oslo"
+    - id: "2"
+      institution: "University of Arizona"
 date: "`r lubridate::today()`"
 description: |
   A one-stop page for the workshop schedule, list of participants, and travel information.
@@ -47,7 +49,7 @@ p <- function(x) format(x, scientific=FALSE, big.mark=',')
 
 ## Location
 
-<a href="https://biosphere2.org/">Biosphere2</a>, University of Arizona outside of Tucson, AZ.
+[Biosphere2](https://biosphere2.org/), University of Arizona outside of Tucson, AZ.
 
 ## Travel
 
