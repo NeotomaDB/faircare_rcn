@@ -7,6 +7,8 @@ author:
   - affiliation:
     - id: "1"
       institution: "Natural Museum of Natural History, University of Oslo"
+    - id: "2"
+      institution: "University of Arizona"
 date: "`r lubridate::today()`"
 description: |
   A tentative schedule of past and future seminars held by the FAIR OS RCN.
@@ -47,7 +49,7 @@ p <- function(x) format(x, scientific=FALSE, big.mark=',')
 tabl <- "
 | Date          | Topic         | Presenter |
 |---------------|:-------------:|----------:|
-| 20 Feb 2023 | Introduction to data services, geospatial ontologies | <a href="https://sipa.fiu.edu/people/faculty/global-and-sociocultural-studies/genevieve-reid.html">Genevieve Reid</a> |
+| 20 Feb 2023 | Introduction to data services, geospatial ontologies | [Genevieve Reid](https://sipa.fiu.edu/people/faculty/global-and-sociocultural-studies/genevieve-reid.html) |
 | 20 Mar 2023 | iSamples, IGSN, DarwinCore |        |
 | 24 Apr 2023 | Science on schema, json-ld (linkedearth) |         |
 "
@@ -58,6 +60,6 @@ cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
 
 #### Author Bios
 
-<b><a href="https://sipa.fiu.edu/people/faculty/global-and-sociocultural-studies/genevieve-reid.html">Genevieve Reid</a></b> is an Assistant Professor of Geography in the Department of Global & Sociocultural Studies at Florida International University in Miami, FL. Her research examines spatial data science in Indigenous contexts, specifically integrating Indigenous knowledges with spatial data. She uses GIScience and Ontologies to help formalize knowledge in a FAIR way.
+**[Genevieve Reid](https://sipa.fiu.edu/people/faculty/global-and-sociocultural-studies/genevieve-reid.html)** is an Assistant Professor of Geography in the Department of Global & Sociocultural Studies at Florida International University in Miami, FL. Her research examines spatial data science in Indigenous contexts, specifically integrating Indigenous knowledges with spatial data. She uses GIScience and Ontologies to help formalize knowledge in a FAIR way.
 
 #### Links to Webinars & Notes
