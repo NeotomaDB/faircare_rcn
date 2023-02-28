@@ -9,7 +9,7 @@ author:
       institution: "Natural Museum of Natural History, University of Oslo"
 date: "`r lubridate::today()`"
 description: |
-  A tentative schedule of past and future seminars held by the FAIR OS RCN"
+  A tentative schedule of past and future seminars held by the FAIR OS RCN.
 output: 
   html_document:
     theme: flatly
