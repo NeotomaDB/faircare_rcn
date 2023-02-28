@@ -1,0 +1,60 @@
+---
+title: "Workshop for FAIR OS RCN"
+shorttitle: "Workshop"
+author:
+  - name: "Meghan Balk"
+    email: "meghan.balk@nhm.uio.no"
+  - affiliation:
+    - id: "1"
+      institution: "Natural History Museum, University of Oslo"
+date: "`r lubridate::today()`"
+description: |
+  A one-stop page for the workshop schedule, list of participants, and travel information.
+output: 
+  html_document:
+    theme: flatly
+    css: "assets/text.css"
+    toc: true
+    toc_depth: 4
+    toc_float: true
+    number_sections: true
+    self_contained: true
+    fig_caption: true
+    code_folding: hide
+---
+
+```{r setup, include=FALSE, result = 'hide', echo=FALSE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message=FALSE)
+library(pacman)
+p_load(lubridate, RPostgreSQL, DT, ggplot2, 
+       ggthemes, svglite,
+       httr, jsonlite, dplyr, leaflet, geojsonsf, sf, purrr, forcats, scales)
+lastdate <- today() - years(1)
+con <- dbConnect(dbDriver("PostgreSQL"),
+                 dbname = Sys.getenv("DBNAME"), 
+                 host = Sys.getenv("HOST"), 
+                 port = Sys.getenv("PORT"), 
+                 user= Sys.getenv("USER"), 
+                 password= Sys.getenv("PASSWORD"))
+p <- function(x) format(x, scientific=FALSE, big.mark=',')
+```
+
+# Workshop
+
+## Dates
+
+16 May - 19 May 2023
+
+## Location
+
+<a href="https://biosphere2.org/">Biosphere2</a>, University of Arizona outside of Tucson, AZ.
+
+## Travel
+
+### Airports
+
+Phoenix Sky Harbor International Airport (PHX)
+- a little over an hr from the workshop venue
+
+Tuson International Airport (TUS)
+- closer to the venue, often more expensive and less options
