@@ -1,8 +1,6 @@
 <!-- badges: start -->
 
-[![lifecycle](https://img.shields.io/badge/lifecycle-paused-orange.svg)](https://www.tidyverse.org/lifecycle/#paused)
-
-[![NSF-2226368](https://img.shields.io/badge/NSF-2226368-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2226368)
+![lifecycle](https://img.shields.io/badge/lifecycle-paused-orange.svg) [![NSF-2226368](https://img.shields.io/badge/NSF-2226368-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2226368)
 
 <!-- badges: end -->
 
